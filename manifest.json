@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "oHRis - Différentiel cumulé",
+  "version": "1.0.0",
+  "description": "Calcule et affiche le différentiel horaire mensuel cumulé sur la feuille de temps oHRis, avec code couleur par jour.",
+  "content_scripts": [
+    {
+      "matches": ["https://ohris.ut-capitole.fr/fr/time/sheet/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
