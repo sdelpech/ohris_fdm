@@ -1,0 +1,60 @@
+#ohris-diff-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  padding: 10px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#ohris-exit-time-btn {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+#ohris-exit-time-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#ohris-exit-time-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+#ohris-diff-banner.ohris-diff-positive {
+  background-color: #1e8e3e;
+}
+
+#ohris-diff-banner.ohris-diff-negative {
+  background-color: #d93025;
+}
+
+td.ohris-diff-positive {
+  background-color: rgba(30, 142, 62, 0.15) !important;
+  color: #1e8e3e !important;
+  font-weight: 600;
+}
+
+td.ohris-diff-negative {
+  background-color: rgba(217, 48, 37, 0.15) !important;
+  color: #d93025 !important;
+  font-weight: 600;
+}
