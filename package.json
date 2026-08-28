@@ -1,0 +1,16 @@
+{
+  "name": "ohris-differentiel-cumule",
+  "version": "1.0.0",
+  "description": "Extension navigateur (Chrome + Firefox) affichant le différentiel horaire cumulé sur la feuille de temps oHRis.",
+  "private": true,
+  "scripts": {
+    "start": "web-ext run --source-dir src --target firefox-desktop",
+    "start:firefox": "web-ext run --source-dir src --target firefox-desktop",
+    "start:chrome": "web-ext run --source-dir src --target chromium",
+    "lint": "web-ext lint --source-dir src",
+    "build": "web-ext build --source-dir src --artifacts-dir dist --overwrite-dest"
+  },
+  "devDependencies": {
+    "web-ext": "^8.9.0"
+  }
+}

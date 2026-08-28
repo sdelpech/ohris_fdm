@@ -10,5 +10,11 @@
       "css": ["styles.css"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ohris-differentiel-cumule@ut-capitole.fr",
+      "strict_min_version": "109.0"
+    }
+  }
 }
