@@ -1,5 +1,6 @@
 node_modules/
-dist/
 web-ext-artifacts/
-*.zip
-*.xpi
+
+# Les zips de dist/ sont versionnés (voir dist/*.zip) ; on ignore le reste.
+dist/*
+!dist/*.zip
